@@ -23,8 +23,9 @@ func main() {
 func runsDay01() {
 	day := "day01"
 	rootPath := fmt.Sprintf("./internal/days/%s/inputs/", day)
-	// s := fmt.Sprintf("%s%s", rootPath, "sample.txt")
+	// p := fmt.Sprintf("%s%s", rootPath, "sample.txt")
 	p := fmt.Sprintf("%s%s", rootPath, "in01.txt")
 	input := utils.ReadLines(p)
 	day01.Part01(input)
+	day01.Part02(input)
 }
